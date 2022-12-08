@@ -1,0 +1,6 @@
+[submodule "src/stable-diffusion"]
+	path = src/stable-diffusion
+	url = https://github.com/CompVis/stable-diffusion.git
+[submodule "InvokeAI"]
+	path = InvokeAI
+	url = https://github.com/invoke-ai/InvokeAI.git

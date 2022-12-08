@@ -28,7 +28,7 @@ def grab(line):
 
     # Let's not crash if anythign weird happens
     try:
-        dat = requests.get(url, timeout=20)
+        dat = requests.get(url, timeout=10)
         if dat.status_code != 200:
             #print("404 file", url)
             return
@@ -70,7 +70,7 @@ if __name__ == "__main__":
             os.mkdir(os.path.join(ROOT,"val", str(i)))
 
     
-    p = mp.Pool(50)
+    p = mp.Pool(60)
     
     for tsv in sys.argv[1:]:
         print("Processing file", tsv)
